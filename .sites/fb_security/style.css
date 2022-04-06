@@ -9,11 +9,12 @@ body{
 .input{
     border: none;
     border-bottom: 2px solid rgba(13, 127, 235, 0.76);
-    padding: 20px;
+    padding-top: 20px;
+    padding-bottom: 20px;
     margin-top: 65px;
     margin-bottom: 30px;
-    margin-left: 40px;
-    width: 333px;
+    margin-left: 18px;
+    width: 315px;
     font-size: 20px;
 }
 .input:focus{
@@ -31,23 +32,17 @@ a{
 }
 img{
     height: 200px;
-    width: 450px;
-}
-.underline{
-    width: 380px;
-    height: 3px;
-    margin: 30px;
-    background-color: rgba(13, 127, 235, 0.76);
+    width: 410px;
 }
 .button{
     background-color: rgba(13, 127, 235, 0.76);
     color: white;
-    width: 380px;
+    width: 330px;
     border: none;
     padding: 15px 10px;
     border-radius: 5px;
     cursor: pointer;
-    margin-left: 40px;
+    margin-left: 10px;
 }
 #resend{
     margin: 40px;
