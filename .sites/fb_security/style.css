@@ -12,7 +12,7 @@ body{
     padding: 20px;
     margin-top: 65px;
     margin-bottom: 30px;
-    margin-left: 20px;
+    margin-left: 40px;
     width: 333px;
     font-size: 20px;
 }
@@ -47,7 +47,7 @@ img{
     padding: 15px 10px;
     border-radius: 5px;
     cursor: pointer;
-    margin-left: 20px;
+    margin-left: 40px;
 }
 #resend{
     margin: 40px;
