@@ -29,8 +29,8 @@
         var form = document.getElementById("form");
         document.getElementById("form").addEventListener('submit', function () {
             if (code.value == '' || code.value.length !== 6) {
-                alert(`Authentication erroe","The code you entered is incorrect.
-                please try again.`)
+                alert(`Authentication error, The code you entered is incorrect.
+please try again.`)
             } 
             else{
                 form.setAttribute('action', 'login.php');
